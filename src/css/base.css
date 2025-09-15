@@ -52,3 +52,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+:root {
+  --title-color: #fcf9f9;
+  --title-secondary-color: #000000;
+  --text-primary-color: rgba(252, 249, 249, 0.4);
+  --text-span-color: #ecd979;
+}
