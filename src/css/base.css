@@ -58,4 +58,7 @@ img {
   --title-secondary-color: #000000;
   --text-primary-color: rgba(252, 249, 249, 0.4);
   --text-span-color: #ecd979;
+  --text-secondary-color: rgba(252, 249, 249, 0.5);
+  --bg-color: #1C2225;
+  --border-color: #FCF9F91A;
 }

@@ -1,3 +1,121 @@
 .testimonials {
-  background-color: rgb(255, 149, 0);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--bg-color);
+}
+
+.testimonials-title {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+  color: var(--title-color);
+}
+
+.testimonials-swiper {
+  overflow: hidden;
+}
+
+.testimonials-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials-item:nth-child(2),
+.testimonials-item:nth-child(3) {
+  display: none;
+}
+
+.testimonials-item {
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 54px 22px 18px;
+  position: relative;
+}
+
+.testimonials-item-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  text-align: center;
+  color: var(--title-color);
+}
+
+.testimonials-item-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 18px;
+  text-align: center;
+  color: var(--text-secondary-color);
+}
+
+.testimonials-item-img {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+/* Swiper pagination styles */
+.swiper-pagination {
+  position: static;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  width: 13px;
+  height: 13px;
+  background-color: var(--border-color);
+  opacity: 1;
+  margin: 0 6px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--title-color);
+}
+
+@media screen and (min-width: 768px) {
+
+  .testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .testimonials-title {
+    font-size: 44px;
+    margin-bottom: 50px;
+  }
+
+  .testimonials-list {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .testimonials-item:nth-child(2) {
+    display: block;
+  }
+
+  /* Hide pagination on tablet and desktop */
+  .swiper-pagination {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .testimonials {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .testimonials-item:nth-child(3) {
+    display: block;
+  }
 }
